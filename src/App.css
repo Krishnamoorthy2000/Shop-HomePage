@@ -1,38 +1,82 @@
-.App {
+nav{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+li{
+  list-style: none;
+  margin: 10px;
+}
+ul{
+  display: flex;
+}
+
+
+.header{
+  background-color: black;
+  color:white;
   text-align: center;
+  height:150px;
+}
+.header h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.header h4 {
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+.add-btn {
+  background-color: #28a745;
+  padding: 7px;
+  border-radius: 8px;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.remove-btn {
+  background-color: #dc3545;
+  padding: 7px;
+  border-radius: 8px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.data-content{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+  justify-content: center;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.data-card {
+  margin: 30px;
+  padding: 40px;
+  border: 2px solid black;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color:beige
+
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img{
+  border-radius: 30px;
+}
+footer{
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding:50px ;
 }
